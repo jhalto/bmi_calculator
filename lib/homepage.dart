@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                   flex: 4,
                   child: Row(
                     children: [
-                      Expanded(child: Container(
+                      Expanded(child: Card(
                         color: Colors.white12,
                         margin: const EdgeInsets.all(10),
                         child: Column(
@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
                           ],
                         ),
                       )),
-                      Expanded(child: Container(
+                      Expanded(child: Card(
                         color: Colors.white12,
                         margin: const EdgeInsets.all(10),
                         child: Column(
