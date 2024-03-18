@@ -77,43 +77,46 @@ class _HomePageState extends State<HomePage> {
                   )),
               Expanded(
                   flex: 4,
-                  child: Container(
-
-                    margin: const EdgeInsets.all(10),
-                    width: double.infinity,
-                    color: Colors.white12,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text("Height",style: TextStyle(
-                            color: Colors.white
-                        ),),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.baseline,
-                          textBaseline: TextBaseline.alphabetic,
-                          children: [
-                            Text("$height",style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 30
-                            ),),
-                            const Text("cm",style: TextStyle(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(45),
+                    child: Container(
+                      
+                      margin: const EdgeInsets.all(10),
+                      width: double.infinity,
+                      color: Colors.white12,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text("Height",style: TextStyle(
+                              color: Colors.white
+                          ),),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.baseline,
+                            textBaseline: TextBaseline.alphabetic,
+                            children: [
+                              Text("$height",style: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 15
-                            ),),
-                          ],
-                        ),
-                        Slider(
-                            max: 220,
-                            min: 140,
-                            value: height.toDouble(), onChanged: (value)
-                        {
-                         setState(() {
-                           height = value.toInt();
-                         });
-                        }),
+                                fontSize: 30
+                              ),),
+                              const Text("cm",style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15
+                              ),),
+                            ],
+                          ),
+                          Slider(
+                              max: 220,
+                              min: 140,
+                              value: height.toDouble(), onChanged: (value)
+                          {
+                           setState(() {
+                             height = value.toInt();
+                           });
+                          }),
 
-                      ],
+                        ],
+                      ),
                     ),
                   )),
               Expanded(
