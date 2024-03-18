@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Center(child: Text("$result",style: const TextStyle(
+          title: Center(child: Text("Bmi Calculator",style: const TextStyle(
               color: Colors.white
           ),)),),
         body: Container(
